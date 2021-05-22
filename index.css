@@ -1,4 +1,5 @@
 body{
+    overflow: hidden;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
 }
@@ -54,10 +55,14 @@ a{
     color: red;
 }
 @media only screen and (max-width: 600px) {
+    body{
+        overflow: hidden;
+    }
     .artile{
         text-align: center;
     }
     .skills{
+        align-items: center;
         margin-top: 1rem;
         word-spacing: 1rem;
     }
@@ -84,7 +89,8 @@ a{
     }
     .text{
         position: end;
-        left: 0;
+        left: 6%;
+        /* text-align: center; */
         margin: 0 4.2rem;
     }
   }
