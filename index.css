@@ -1,4 +1,5 @@
 body{
+    font-family: 'Poppins', sans-serif;
     overflow: hidden;
     background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
@@ -26,7 +27,7 @@ img{
 }
 .hello{
     margin-left: 10px;
-    color: #0D6EFD;
+    color: #3279bb;
 }
 .skills{
     color: aliceblue;
