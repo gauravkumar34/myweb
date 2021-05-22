@@ -1,6 +1,6 @@
 body{
     overflow: hidden;
-    background: rgb(2,0,36);
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
 }
 img{
@@ -54,7 +54,43 @@ a{
 .text i:hover{
     color: red;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px){
+    body{
+        overflow: hidden;
+    }
+    
+    img{
+        margin-top: 20%;
+        margin-left:60%;
+        align-items: center;
+        width: 500px;
+        height: 500px;
+        border-radius: 5rem;
+    }
+    .skills{
+        color: aliceblue;
+        font-size: 42px;
+        margin-left: .4rem;
+        word-spacing: 2rem;
+    
+    }
+    .name{
+        font-size: 55px;
+    }
+    .backC{
+        margin: 0 !important;
+        font-size: 20px !important;
+        position: absolute;
+        top: 45%;
+        left: 25%;
+    }
+    .text{
+        position: fixed;
+        left: 0;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 500px) {
     body{
         overflow: hidden;
     }
@@ -88,9 +124,8 @@ a{
         font-size: 30px;
     }
     .text{
-        position: end;
-        left: 6%;
-        /* text-align: center; */
-        margin: 0 4.2rem;
+        position: fixed;
+        left: 0;
+        text-align: center;
     }
   }
