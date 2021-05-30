@@ -6,6 +6,13 @@ formbutton("create", {
   title: "How can we help?",
   fields: [
     { 
+      type: "text", 
+      label: "Name:", 
+      name: "name",
+      required: true,
+      placeholder: "Your Sweet Name"
+    },
+    { 
       type: "email", 
       label: "Email:", 
       name: "email",
@@ -22,10 +29,10 @@ formbutton("create", {
   ],
   styles: {
     title: {
-      backgroundColor: "gray"
+      backgroundColor: "#3279bb"
     },
     button: {
-      backgroundColor: "gray"
+      backgroundColor: "#3279bb"
     }
   }
 });
