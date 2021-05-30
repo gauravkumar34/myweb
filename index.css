@@ -1,8 +1,17 @@
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow: hidden;
+    overflow-x: hidden;
     background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
+}
+.row {
+    --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0 !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x)/ -2);
+    margin-left: calc(var(--bs-gutter-x)/ -2);
 }
 img{
     opacity: .9;
@@ -91,7 +100,7 @@ a{
 }
 @media only screen and (min-width: 900px) and ( max-width: 1200px){
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     
     img{
@@ -127,14 +136,14 @@ a{
 }
 @media only screen and (max-width: 500px) {
     body{
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .artile{
         text-align: center;
     }
     .skills{
         align-items: center;
-        margin-top: 1rem;
+        margin: 1rem;
         word-spacing: 1rem;
     }
     .skills i{
@@ -150,7 +159,6 @@ a{
     }
     
     .backC{
-        margin: 0 !important;
         font-size: 20px !important;
         position: absolute;
         left: 0;
