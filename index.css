@@ -1,5 +1,5 @@
 body{
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow: hidden;
     background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
@@ -13,7 +13,7 @@ img{
 .backC{
     text-transform: capitalize;
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 45%;
 }
 .artile{
@@ -54,6 +54,40 @@ a{
 }
 .text i:hover{
     color: red;
+}
+
+#status{
+    width: 100%;
+    text-align: center;
+    padding: auto;
+    border-radius: 8px;
+
+}
+#status.success{
+    background-color: rgb(211, 260, 153);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250,129,92);
+    color: black;
+    animation: status 4s ease forwards;
+}
+
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+       
+            opacity: 1;
+            pointer-events: none;
+   
+    }
 }
 @media only screen and (min-width: 900px) and ( max-width: 1200px){
     body{
