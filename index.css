@@ -1,175 +1,199 @@
-body{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
-    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,0.7290266448376226) 100%, rgba(0,212,255,1) 100%);
+body {
+  margin: 0%;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 0.7290266448376226) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 0, 0, 0.7290266448376226) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.mobile {
+  display: none;
 }
 .row {
-    --bs-gutter-x: 0 !important;
-    --bs-gutter-y: 0 !important;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(var(--bs-gutter-y) * -1);
-    margin-right: calc(var(--bs-gutter-x)/ -2);
-    margin-left: calc(var(--bs-gutter-x)/ -2);
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
 }
-img{
-    opacity: .9;
-    height: 117%;
-    width: 100%;
-    
+img {
+  opacity: 0.9;
+  height: 117%;
+  width: 100%;
 }
-.backC{
-    text-transform: capitalize;
-    position: absolute;
-    top: 20%;
-    left: 45%;
+.backC {
+  text-transform: capitalize;
+  position: absolute;
+  top: 20%;
+  left: 45%;
 }
-.artile{
-    color: aliceblue;
+.artile {
+  color: aliceblue;
 }
-.name{
-    font-size: 60px;
-    color: aliceblue;
-    font-weight: bolder;
-    
+.name {
+  font-size: 60px;
+  color: aliceblue;
+  font-weight: bolder;
 }
-.hello{
-    margin-left: 10px;
-    color: #3279bb;
+.hello {
+  margin-left: 10px;
+  color: #3279bb;
 }
-.skills{
-    color: aliceblue;
-    font-size: 42px;
-    margin-left: .4rem;
-    word-spacing: 1rem;
-
+.skills {
+  color: aliceblue;
+  font-size: 42px;
+  margin-left: 0.4rem;
+  word-spacing: 1rem;
 }
 
-.skills i:hover{
-    color: red;
+.skills i:hover {
+  color: red;
 }
-a{
-    text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-.text{
-    padding: 1rem 1rem;
-    word-spacing: 1rem;
-    
-    font-size: 30px;
-    position: absolute;
-    top: 90%;
-    left: 60%;
+.text {
+  padding: 1rem 1rem;
+  word-spacing: 1rem;
+
+  font-size: 30px;
+  position: absolute;
+  top: 90%;
+  left: 60%;
 }
-.text i:hover{
-    color: red;
+.text i {
+  color: aliceblue;
+}
+.text i:hover {
+  color: red;
 }
 
-#status{
-    width: 100%;
-    text-align: center;
-    padding: auto;
-    border-radius: 8px;
-
+#status {
+  width: 100%;
+  text-align: center;
+  padding: auto;
+  border-radius: 8px;
 }
-#status.success{
-    background-color: rgb(211, 260, 153);
-    animation: status 4s ease forwards;
+#status.success {
+  background-color: rgb(211, 260, 153);
+  animation: status 4s ease forwards;
 }
-#status.error{
-    background-color: rgb(250,129,92);
-    color: black;
-    animation: status 4s ease forwards;
+#status.error {
+  background-color: rgb(250, 129, 92);
+  color: black;
+  animation: status 4s ease forwards;
 }
 
 @keyframes status {
-    0%{
-        opacity: 1;
-        pointer-events: all;
-    }
-    90%{
-        opacity: 1;
-        pointer-events: all;
-    }
-    100%{
-       
-            opacity: 1;
-            pointer-events: none;
-   
-    }
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 1;
+    pointer-events: none;
+  }
 }
-@media only screen and (min-width: 900px) and ( max-width: 1200px){
-    body{
-        overflow-x: hidden;
-    }
-    
-    img{
-        margin-top: 20%;
-        margin-left:60%;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-        border-radius: 5rem;
-    }
-    .skills{
-        color: aliceblue;
-        font-size: 42px;
-        margin-left: .4rem;
-        word-spacing: 2rem;
-    
-    }
-    .name{
-        font-size: 55px;
-    }
-    .backC{
-        margin: 0 !important;
-        font-size: 20px !important;
-        position: absolute;
-        top: 45%;
-        left: 25%;
-    }
-    .text{
-        position: fixed;
-        left: 0;
-        text-align: center;
-    }
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  img {
+    margin-top: 20%;
+    margin-left: 60%;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 5rem;
+  }
+  .skills {
+    color: aliceblue;
+    font-size: 42px;
+    margin-left: 0.4rem;
+    word-spacing: 2rem;
+  }
+  .name {
+    font-size: 55px;
+  }
+  .backC {
+    margin: 0 !important;
+    font-size: 20px !important;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+  }
+  .text {
+    position: fixed;
+    left: 0;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 500px) {
-    body{
-        overflow-x: hidden;
-    }
-    .artile{
-        text-align: center;
-    }
-    .skills{
-        align-items: center;
-        margin-top: 3rem;
-        word-spacing: 1rem;
-    }
-    .skills i{
-        width: 45px;
-    }
-    img{
-        margin-top: 20%;
-        margin-left:32%;
-        align-items: center;
-        width: 150px;
-        height: 150px;
-        border-radius: 5rem;
-    }
-    
-    .backC{
-        margin-top: 5rem !important;
-        font-size: 20px !important;
-        position: absolute;
-        left: 0;
-    }
-    .name{
-        font-size: 30px;
-    }
-    .text{
-        position: fixed;
-        left: 0;
-        text-align: center;
-    }
+  .mobile {
+    display: block;
   }
+  .desktop {
+    display: none !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .artile {
+    text-align: center;
+  }
+  .skills {
+    align-items: center;
+    margin-top: 3rem;
+    word-spacing: 1rem;
+  }
+  .skills i {
+    width: 45px;
+  }
+  img {
+    margin-top: 20%;
+    margin-left: 32%;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 5rem;
+  }
+
+  .backC {
+    margin-top: 5rem !important;
+    font-size: 20px !important;
+    position: absolute;
+    left: 0;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .text {
+    position: fixed;
+    left: 0;
+    text-align: center;
+  }
+}
