@@ -161,6 +161,7 @@ a {
   }
   body {
     overflow-x: hidden;
+    
   }
   .artile {
     text-align: center;
@@ -169,6 +170,7 @@ a {
     align-items: center;
     margin-top: 3rem;
     word-spacing: 1rem;
+    text-align: center;
   }
   .skills i {
     width: 45px;
