@@ -3,14 +3,14 @@ window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).
 /* customize formbutton below*/     
 formbutton("create", {
   action: "https://formspree.io/f/xyylwjvz",
-  title: "How can we help?",
+  title: "How can I help you?",
   fields: [
     { 
       type: "text", 
       label: "Name:", 
       name: "name",
       required: true,
-      placeholder: "Your Sweet Name"
+      placeholder: "Your Name"
     },
     { 
       type: "email", 
